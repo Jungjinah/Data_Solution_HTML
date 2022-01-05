@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 
+	파일들 사이즈 조절해야함
+		가로나 세로 중에 하나만 조절하면 -> 원본 비율에 맞춰서 크기 조절됨
+		단위 명시 안하면 px(픽셀)단위로 인식
+		%단위 사용 가능
+		사이즈 조절은 안하는게 베스트 -> 그림이 깨져서 나와요!
+	 -->
+	<!-- 
+	파일 경로
+		절대경로 : 처음부터 다 명시
+			서울시 강남구 테헤란로 78길 16 (대치동, 노벨빌딩 5층)
+			실전에서는 사용불가능
+		상대경로 : 현재 작업중인 html기준으로
+			.. - 한단계 위의 경로로
+			Window는 대소문자를 구별 안함
+			Linux는 대소문자를 구별함
+			*** 한글파일명은 X!
+	 -->	
+	사진, 동영상, 음악파일, pdf파일
+	<!-- 절대경로 -->
+	<img src="C:\Users\wtime\Desktop\JSP\Jan05_1_HTML\src\main\webapp\img\babyshark.png">	
+	<img src="C:\Users\wtime\Desktop\JSP\Jan05_1_HTML\src\main\webapp\img\magicgirls.gif">	
+	<hr>
+	<!-- 절대경로 크기설정 
+		 대신, 원본보다 크기가 크게 설정하면 화질 깨짐!-->
+	<img width="400px" src="C:\Users\wtime\Desktop\JSP\Jan05_1_HTML\src\main\webapp\img\babyshark.png">	
+	<img width="50%" src="C:\Users\wtime\Desktop\JSP\Jan05_1_HTML\src\main\webapp\img\babyshark.png">	
+	<hr>
+	<!-- 상위폴더 -->
+	<img src="../moonangel.gif" width = 30%>
+	<!-- <img src=" ">상위폴더인데 같은 경로에 있으면 .. 안쓰고 '이름.gif'이런식! -->
+	<hr> 
+	<video src="../cat likes chur.mp4" controls="controls"></video>
+	<audio src="../moonsae_secretLife.mp3" controls="controls"></audio>
+	<hr>
+	<emded src="../media.pdf" controls="controls"></emded>
+	
+	
+</body>
+</html>
