@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!--  '<'쳐서 자동완성 보면 style 구성 다 갖춰져서 나옴 -->
+<style type="text/css">		
+	div {
+		color: #0000FF;
+	}
+	#birthday{
+	 background-color: yellow;
+	}
+	.c {
+		font-weight: 900;
+	}
+	h1, h2 {
+		text-decoration: overline;
+	}
+	div h3 {
+		/* 글자의 그림자처리 : 색깔 x축 y축 blur(번짐) */
+		text-shadow: Orange 3px 3px 5px;
+	}
+	h3.C {
+		/* 선 종류 : solid dashed dotted
+				   double inset outset groove */
+		/* 테두리 : 색깔 선종류 두께*/
+		border: #99FFFF double 7px;
+	}
+
+	/* 버튼만들기 */ 
+	#btn {
+		font-size: 20pt;
+		background-color : #99CCFF;
+		border : #FF6666 outset 5px;
+	}
+	
+	/* 버튼의 효과 : 음영효과*/ 
+	#btn:active {
+		border: #FF6666 inset 5px;
+	}
+
+	/*글씨체 바꾸기 (마우스 커서 올리면 바뀌어짐,,)*/
+	#btn:hover {
+		font-family: "궁서";
+	}
+	
+</style>
+
+</head>
+<body>
+	<span id="btn">2시간남음</span>
+	<h1>집가구시퍼영</h1>
+	<h2>좀있으면 집가용</h2>
+	<div>
+		<h3>난 육쌈냉면 먹구싶엉</h3>
+	</div>
+	<h3 class="C">짱조아여~</h3>	
+	
+	<div class="C">이 한줄을 다 차지</div>
+	<span class="C">이 영역만 사용</span>
+	<div id="birthday">그대의 생일~</div>
+	
+	<!-- 
+		CSS (Casscading Style Sheet)
+			HTML DOM객체에 디자인을 부여
+			
+			위치
+			 1) .html파일 내부 <head></head> 부분에 넣을 수 있고
+			 2) DOM객체 속성형태로 넣어줄 수 있고 (비추,,)	
+			 3) .css파일을 따로 (주력!)
+			
+			문법
+			 선택자 {
+			 	속성명 : 값;
+			 	속성명 : 값;
+			 	...
+			 }
+			 
+			 선택자 (Selector)
+			  기본형
+			  	태그명 - 태그명에 속하는 거 전부 다! (div tr td 등)
+			  	#id - id가 지정한 값인거 (중복사용x)
+			  	.class - class가 지정한 값인거 (중복사용o)
+			  조합형
+			   선택자, 선택자, ... - 여러개 선택
+			   선택자 선택자, ... - 내부 선택
+			   선택자.class
+			  상태형
+				선택자:상태
+	 -->
+	
+	
+	
+</body>
+</html>
